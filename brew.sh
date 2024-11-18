@@ -9,4 +9,4 @@ sudo apt-get install build-essential
 brew install gcc
 
 # install brew packages
-brew install scc tldr thefuck duf eza bat 
+brew install scc tldr thefuck duf eza bat
