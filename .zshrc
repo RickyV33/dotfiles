@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,17 +101,19 @@ alias glop=gitlogonelinepretty
 alias gitbranchclean='git remote prune origin && git branch --merged | egrep -v "(^\*|main|dev|master)" | xargs git branch -d'
 alias gitlogcurrentworkingdirectory='git log --oneline -- **/*'
 alias glcwd=gitlogcurrentworkingdirectory
-alias gprom='git pull --rebase origin master'
-alias hflabels='gh pr edit $(git rev-parse --abbrev-ref HEAD) --add-label "tribe: data-solutions" --add-label "squad: enablement"'
-alias assignme='gh pr edit $(git rev-parse --abbrev-ref HEAD) --add-assignee @me'
-alias pr-create='gh pr create && hflabels && assignme'
-alias need-dev='gh pr edit $(git rev-parse --abbrev-ref HEAD) --add-label "need-dev"'
+alias gpom='git pull origin master'
+alias gd='git diff'
+alias gst='git status'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gbD='git branch --delete --force'
+alias glo='git log --oneline --decorate'
+alias gp='git push'
+alias gpf='git push --force-with-lease --force-if-includes'
+alias gcm='git checkout master'
 
 # These came from https://dev.to/joaovitor/exa-instead-of-ls-1onl
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
-alias ls='exa --color=auto'
+alias ls='eza -lah'
 
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141

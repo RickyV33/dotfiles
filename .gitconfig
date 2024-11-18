@@ -1,8 +1,7 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
-	name = Jamie Thomson
-	email = 854953+jamiekt@users.noreply.github.com
+	name = <NAME>
+	email = <EMAIL>
 [push]
 	autoSetupRemote = true
-  
+[core]
+        editor = vim
