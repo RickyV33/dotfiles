@@ -5,7 +5,8 @@ if [ -z "$NAME" ] || [ -z "$EMAIL" ]; then
     exit 1
 fi
 
-cp ./.gitconfig ~
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cp "$DIR/.gitconfig" ~
 # replace the following placeholders with the corresponding env var NAME and EMAIL:
 sed -i "s/<NAME>/$NAME/g" ~/.gitconfig
 sed -i "s/<EMAIL>/$EMAIL/g" ~/.gitconfig

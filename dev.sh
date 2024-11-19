@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # The whole works for dev containers
-./git.sh
-./zsh.sh
-./zshrc_alias.sh
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$DIR/git.sh"
+"$DIR/zsh.sh"
+"$DIR/zshrc_alias"
