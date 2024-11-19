@@ -5,3 +5,4 @@
 ./zsh.sh
 ./zshrc_alias.sh
 ./brew.sh
+./cli_alias.sh
