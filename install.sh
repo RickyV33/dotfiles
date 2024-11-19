@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# The whole works
+# The whole works for personal machines
 ./git.sh
 ./zsh.sh
 ./zshrc_alias.sh
