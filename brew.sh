@@ -10,3 +10,4 @@ brew install gcc
 
 # install brew packages
 brew install scc tldr thefuck duf eza bat
+echo 'eval $(thefuck --alias)' >> ~/.zshrc
