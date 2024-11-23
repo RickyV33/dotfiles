@@ -17,6 +17,8 @@ echo "alias gpf='git push --force-with-lease --force-if-includes'" >> ~/.zshrc
 echo "alias gcm='git checkout master'" >> ~/.zshrc
 
 
+
+
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141
 echo "prompt_context() {}" >> ~/.zshrc
