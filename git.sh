@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$NAME" ] || [ -z "$EMAIL" ]; then
-    echo "Error: Both NAME and EMAIL environment variables are required."
+    echo "Error: Both NAME and EMAIL environment variables are required for gitconfig transfer. Skipping..."
     exit 1
 fi
 
