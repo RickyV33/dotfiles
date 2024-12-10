@@ -16,7 +16,7 @@ echo "alias gp='git push'" >> ~/.zshrc
 echo "alias gpf='git push --force-with-lease --force-if-includes'" >> ~/.zshrc
 echo "alias gcm='git checkout master'" >> ~/.zshrc
 
-echo "alias ls='eza -lah'" >> ~/.zshrc
+# echo "alias ls='eza -lah'" >> ~/.zshrc
 
 
 # remove username@hostname in prompt as advised at
